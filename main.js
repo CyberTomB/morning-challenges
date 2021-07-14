@@ -3,9 +3,5 @@ function isPalindrome(str) {
    let strArr = strSpaceless.split('');
    let strRevArr = strArr.reverse()
    let strRev = strRevArr.join('')
-   if (strSpaceless == strRev) {
-      return true
-   } else {
-      return false
-   }
+   return strSpaceless === strRev
 }
