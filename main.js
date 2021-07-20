@@ -5,3 +5,7 @@ function isPalindrome(str) {
    let strRev = strRevArr.join('')
    return strSpaceless === strRev
 }
+
+function mostCommonLetter(str) {
+
+}
