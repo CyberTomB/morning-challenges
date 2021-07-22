@@ -15,6 +15,12 @@
    </form>
    <h3>Response:</h3>
    <p id="factorize-output"></p>
+   <form onsubmit="timeMeasure(event)">
+      <input type="number" name="num" id="time-measure-num" min="0" max="10000000">
+      <button type="submit">Measure Time!</button>
+   </form>
+   <h3>Response:</h3>
+   <p id="time-measure-output"></p>
 
 
    <script src="main.js"></script>

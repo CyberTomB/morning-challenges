@@ -28,3 +28,16 @@ function factorize(event) {
    document.getElementById('factorize-output').innerText = str
    form.reset()
 }
+
+function timeMeasure(event) {
+   event.preventDefault()
+   let form = event.target
+   let num = form.num.value
+   let str = ''
+   let hr = Math.floor(num / 60)
+   let min = num % 60
+   str = `${hr}:${min}`
+   console.log(str)
+   document.getElementById('factorize-output').innerText = str
+   form.reset()
+}
