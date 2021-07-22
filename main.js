@@ -38,6 +38,6 @@ function timeMeasure(event) {
    let min = num % 60
    str = `${hr}:${min}`
    console.log(str)
-   document.getElementById('factorize-output').innerText = str
+   document.getElementById('time-measure-output').innerText = str
    form.reset()
 }

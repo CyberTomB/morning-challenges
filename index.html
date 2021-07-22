@@ -9,18 +9,25 @@
 </head>
 
 <body>
-   <form onsubmit="factorize(event)">
-      <input type="number" name="num" id="factorize-num" min="1" max="10000000">
-      <button type="submit">Factorize!</button>
-   </form>
-   <h3>Response:</h3>
-   <p id="factorize-output"></p>
-   <form onsubmit="timeMeasure(event)">
-      <input type="number" name="num" id="time-measure-num" min="0" max="10000000">
-      <button type="submit">Measure Time!</button>
-   </form>
-   <h3>Response:</h3>
-   <p id="time-measure-output"></p>
+   <div>
+      <h2>Factorize:</h2>
+      <form onsubmit="factorize(event)">
+         <input type="number" name="num" id="factorize-num" min="1" max="10000000">
+         <button type="submit">Factorize!</button>
+      </form>
+      <h3>Response:</h3>
+      <p id="factorize-output"></p>
+   </div>
+
+   <div>
+      <h2>Measure Minutes:</h2>
+      <form onsubmit="timeMeasure(event)">
+         <input type="number" name="num" id="time-measure-num" min="0" max="10000000">
+         <button type="submit">Measure Time!</button>
+      </form>
+      <h3>Response:</h3>
+      <p id="time-measure-output"></p>
+   </div>
 
 
    <script src="main.js"></script>
