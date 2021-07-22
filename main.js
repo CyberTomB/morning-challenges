@@ -36,7 +36,7 @@ function timeMeasure(event) {
    let str = ''
    let hr = Math.floor(num / 60)
    let min = num % 60
-   str = `${hr}:${min}`
+   str = `${hr}:${min < 10 ? '0' + min : min}`
    console.log(str)
    document.getElementById('time-measure-output').innerText = str
    form.reset()
