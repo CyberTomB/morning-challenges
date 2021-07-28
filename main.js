@@ -41,3 +41,24 @@ function timeMeasure(event) {
    document.getElementById('time-measure-output').innerText = str
    form.reset()
 }
+
+function battle(goodTeam, badTeam){
+   let goodArr = goodTeam.split(" ")
+   let badArr = badTeam.split(" ")
+   let goodSum = 0
+   let badSum = 0
+   for(let i = 0; i < goodArr.length; i++){
+      goodSum += parseFloat(goodArr[i])
+   }
+   for(let i = 0; i < badArr.length; i++){
+      badSum += parseFloat(badArr[i])
+   }
+   console.log(goodArr, goodSum, badArr, badSum)
+   if (goodSum > badSum){
+      return "Battle Result: Good triumphs over Evil"
+   } else if (goodSum == badSum){
+      return "Battle Result: No victor on this battle field"
+   } else {
+      return "Battle Result: Evil eradicates all trace of Good"
+   }
+}
