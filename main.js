@@ -43,17 +43,19 @@ function timeMeasure(event) {
 }
 
 function battle(goodTeam, badTeam){
-   let goodArr = goodTeam.split(" ")
-   let badArr = badTeam.split(" ")
+   let goodArmy = [1, 2, 3, 3, 4, 10]
+   let badArmy = [1, 2, 2, 2, 3, 5, 10]
+   let goodPower = goodTeam.split(" ")
+   let badPower = badTeam.split(" ")
    let goodSum = 0
    let badSum = 0
-   for(let i = 0; i < goodArr.length; i++){
-      goodSum += parseFloat(goodArr[i])
+   for(let i = 0; i < goodPower.length; i++){
+      goodSum += parseFloat(goodPower[i]) * goodArmy[i]
    }
-   for(let i = 0; i < badArr.length; i++){
-      badSum += parseFloat(badArr[i])
+   for(let i = 0; i < badPower.length; i++){
+      badSum += parseFloat(badPower[i]) * badArmy[i]
    }
-   console.log(goodArr, goodSum, badArr, badSum)
+   console.log(goodPower, goodSum, badPower, badSum)
    if (goodSum > badSum){
       return "Battle Result: Good triumphs over Evil"
    } else if (goodSum == badSum){
